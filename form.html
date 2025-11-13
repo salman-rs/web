@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration form
+        </title>
+    </head>
+    <body bgcolor="lightgreen">
+        <center>
+            <h2>Registration form</h2>
+            <form action="simple.html" method="get">
+                <label>Full Name:</label><br>
+                <input type="text" name="Fullname" required><br><br>
+
+                <label>Email:</label><br>
+                <input type="text" nam="Email" required><br><br>
+
+                <label>Phone number:</label><br>
+                <input type="tel" name="Phone" pattern="[0-9]{10}" maxlength="10" oninput="limitPhoneNumber"><br><br>
+                
+                <label>Password:</label><br><br>
+                <input type="password" name="password" required><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" name="Gender" value="Male">Male
+                <input type="radio" name="Gender" value="Female">Female
+                <input type="radio" name="Gender" value="other">other
+                <br><br>
+
+                <label>Daat of Birth</label><br>
+                <input type="date" name="dob"><br><br>
+
+                <label>Address:</label><br>
+                <textarea name="Adress" rows="4" cols="30"></textarea><br><br>
+
+                <label>Choose Course:</label><br>
+                <select name="Course">
+                    <option value="SELECT">SELECT</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MBA">MBA</option>
+                    <option value="BCA">BCA</option>
+
+                </select><br><br>
+
+                <input type="submit" value="Register Now" >
+                <a href="simple.html"></a>
+            </form>
+        </center>
+    </body>
+</html>
